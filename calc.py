@@ -4,16 +4,21 @@ while True:
 	x, z, y = raw_input().split() 
 	x = float(x)
 	y = float(y)
-	if z in ('+','-','*','/'):	
+	if z in ('+','-','*','/','//','%','**'):	
 		if z == '+':
-			x = x + y
+			print(x + y)
 		elif z == '-':
-			x = x - y
+			print(x - y)
 		elif z == '*':
-			x = x * y
+			print(x * y)
 		elif z == '/':
-			x = x / y
-		print(x)
+			print(x / y)
+		elif z == '//':
+			print(x // y)
+		elif z == '%':
+			print(x % y)
+		elif z == '**':
+			print(x ** y)
 
 
 
