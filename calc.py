@@ -1,32 +1,36 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+import math
 while True:
-	x = raw_input()
+	x = input()
 	if x == 'quit':
 		quit()
+	elif x == 'x!':
+		fac = int(input())
+		print('факториал числа', math.factorial(fac))
+		continue
 	else:
-		z = raw_input()
-		y = raw_input()
-		x = float(x)
-		y = float(y)
-	if z in ('+','-','*','/','//','%','**'):	
-		if z == '+':
+		mark = input()
+		y = input()
+		x, y = float(x), float(y)
+	if mark in ('+','-','*','/','//','%','**'):	
+		if mark == '+':
 			print(x + y)
-		elif z == '-':
+		elif mark == '-':
 			print(x - y)
-		elif z == '*':
+		elif mark == '*':
 			print(x * y)
-		elif z == '/':
+		elif mark == '/':
 			if y != 0:
 				print(x / y)
 			else:
 				print('Деление на ноль!')
-		elif z == '//':
+		elif mark == '//':
 			print(x // y)
-		elif z == '%':
+		elif mark == '%':
 			print(x % y)
-		elif z == '**':
+		elif mark == '**':
 			print(x ** y)
 	else:
 		print('Неверный знак операции')
