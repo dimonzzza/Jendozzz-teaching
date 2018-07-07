@@ -11,26 +11,26 @@ while True:
 		print('факториал числа', math.factorial(fac))
 		continue
 	else:
-		mark = input()
+		mark_operation = input()
 		y = input()
 		x, y = float(x), float(y)
-	if mark in ('+','-','*','/','//','%','**'):	
-		if mark == '+':
+	if mark_operation in ('+','-','*','/','//','%','**'):	
+		if mark_operation == '+':
 			print(x + y)
-		elif mark == '-':
+		elif mark_operation == '-':
 			print(x - y)
-		elif mark == '*':
+		elif mark_operation == '*':
 			print(x * y)
-		elif mark == '/':
+		elif mark_operation == '/':
 			if y != 0:
 				print(x / y)
 			else:
 				print('Деление на ноль!')
-		elif mark == '//':
+		elif mark_operation == '//':
 			print(x // y)
-		elif mark == '%':
+		elif mark_operation == '%':
 			print(x % y)
-		elif mark == '**':
+		elif mark_operation == '**':
 			print(x ** y)
 	else:
 		print('Неверный знак операции')
