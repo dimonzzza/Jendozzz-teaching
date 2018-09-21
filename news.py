@@ -28,8 +28,8 @@ if len(sys.argv) == 3:
 a = last_news + points
 result_list = []
 
-for i in range(len(a)):
-	dictionary = {'name': last_news[i],'point': points[i]}
+for i in range(len(a[:29])):
+	dictionary = {'name': last_news[i].getText(),'point': points[i].getText()}
 	result_list.append(dictionary)
 
 print(result_list)
