@@ -25,12 +25,15 @@ if len(sys.argv) == 3:
 	last = int(sys.argv[2])
 	last_news = last_news[first:last]
 
-a = last_news + points
 result_list = []
 
-for i in range(len(a[:29])):
+for i in range(len(last_news[:29])):
 	dictionary = {'name': last_news[i].getText(),'point': points[i].getText()}
 	result_list.append(dictionary)
+
+def sort_by_point(i):
+	return dictionary['point']
+result_list.sort(key = sort_by_point)
 
 print(result_list)
 
