@@ -35,12 +35,6 @@ def sort_by_point(i):
 	return dictionary['point']
 result_list.sort(key = sort_by_point)
 
-
-
-
-
-Деееееееееееееееееети, зубы берегитееееееееееееееее
-
 print(result_list)
 
 	
